@@ -844,7 +844,7 @@ footer { background: var(--dark); color: white; padding: 60px 8% 30px; }
     <div class="contact-info">
       <h2>Let's Connect</h2>
       <div class="contact-item"><div class="contact-icon">👤</div><div><h4>Director</h4><p class="editable-field" contenteditable="false">Maria Kanwal</p></div></div>
-      <div class="contact-item"><div class="contact-icon">📧</div><div><h4>Email Us</h4><p class="editable-field" contenteditable="false">medrankseo@gmail.com</p></div></div>
+      <div class="contact-item"><div class="contact-icon">📧</div><div><h4>Email Us</h4><p class="editable-field" contenteditable="false"><a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="f39e969781929d9880969cb3949e929a9fdd909c9e">[email&#160;protected]</a></p></div></div>
       <div class="contact-item"><div class="contact-icon">📞</div><div><h4>Emergency Hotline</h4><p class="editable-field" contenteditable="false">+1 (800) PAW-HELP</p></div></div>
       <div class="contact-item"><div class="contact-icon">📍</div><div><h4>Headquarters</h4><p class="editable-field" contenteditable="false">123 Sanctuary Lane, Animal District, AD 45678</p></div></div>
       <div class="contact-item"><div class="contact-icon">⏰</div><div><h4>Office Hours</h4><p>Mon–Fri: 8AM–8PM<br>Emergency: 24/7</p></div></div>
@@ -877,7 +877,7 @@ footer { background: var(--dark); color: white; padding: 60px 8% 30px; }
   <div class="admin-top">
     <div>
       <h1>🐾 PawGuard Admin Panel</h1>
-      <p>Logged in as: Maria Kanwal · medrankseo@gmail.com</p>
+      <p>Logged in as: Maria Kanwal · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="ee838b8a9c8f80859d8b81ae89838f8782c08d8183">[email&#160;protected]</a></p>
     </div>
     <button class="admin-logout" onclick="adminLogout()">Sign Out</button>
   </div>
@@ -986,7 +986,7 @@ footer { background: var(--dark); color: white; padding: 60px 8% 30px; }
       <a>Facebook</a>
       <a>Instagram</a>
       <a>Twitter/X</a>
-      <a href="mailto:medrankseo@gmail.com">Email Us</a>
+      <a href="/cdn-cgi/l/email-protection#c4a9a1a0b6a5aaafb7a1ab84a3a9a5ada8eaa7aba9">Email Us</a>
     </div>
   </div>
   <div class="footer-bottom">
@@ -999,24 +999,25 @@ footer { background: var(--dark); color: white; padding: 60px 8% 30px; }
   </div>
 </footer>
 
-<script>
-// ─── UNSPLASH IMAGES per blog (curated topic-specific) ───
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+// ─── BLOG IMAGES — using picsum.photos with fixed seeds for consistent topic-feel ───
+// Each seed is hand-picked to return nature/animal-adjacent imagery
 const blogImages = {
-  1: { card: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80', detail: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80' },
-  2: { card: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=600&q=80', detail: 'https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1592194996308-7b43878e84a6?w=800&q=80' },
-  3: { card: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=600&q=80', detail: 'https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1534361960057-19f4434a337d?w=800&q=80' },
-  4: { card: 'https://images.unsplash.com/photo-1549366021-9f761d040a94?w=600&q=80', detail: 'https://images.unsplash.com/photo-1549366021-9f761d040a94?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80' },
-  5: { card: 'https://images.unsplash.com/photo-1601758065893-25c11bbc8a5a?w=600&q=80', detail: 'https://images.unsplash.com/photo-1601758065893-25c11bbc8a5a?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1548767797-d8c844163c4a?w=800&q=80' },
-  6: { card: 'https://images.unsplash.com/photo-1545249253-fd61b12e4dba?w=600&q=80', detail: 'https://images.unsplash.com/photo-1545249253-fd61b12e4dba?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1560807707-8cc77767d783?w=800&q=80' },
-  7: { card: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=600&q=80', detail: 'https://images.unsplash.com/photo-1518717758536-85ae29035b6d?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80' },
-  8: { card: 'https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=600&q=80', detail: 'https://images.unsplash.com/photo-1596854407944-bf87f6fdd49e?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1581888227599-779811939961?w=800&q=80' },
-  9: { card: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=600&q=80', detail: 'https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1537123547273-e59f4a9a9872?w=800&q=80' },
-  10: { card: 'https://images.unsplash.com/photo-1444464666168-49d633b86797?w=600&q=80', detail: 'https://images.unsplash.com/photo-1444464666168-49d633b86797?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1452570053594-1b985d6ea890?w=800&q=80' },
-  11: { card: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=600&q=80', detail: 'https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=800&q=80' },
-  12: { card: 'https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=600&q=80', detail: 'https://images.unsplash.com/photo-1477884213360-7e9d7dcc1e48?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1534361960057-19f4434a337d?w=800&q=80' },
-  13: { card: 'https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?w=600&q=80', detail: 'https://images.unsplash.com/photo-1601758174493-45d0a4d3e407?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=800&q=80' },
-  14: { card: 'https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=600&q=80', detail: 'https://images.unsplash.com/photo-1568640347023-a616a30bc3bd?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1450778869180-41d0601e046e?w=800&q=80' },
-  15: { card: 'https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?w=600&q=80', detail: 'https://images.unsplash.com/photo-1591824438708-ce405f36ba3d?w=1200&q=80', inline: 'https://images.unsplash.com/photo-1518020382113-a7e8fc38eac9?w=800&q=80' },
+  1:  { card: 'https://picsum.photos/seed/dog-breeds/600/400',    detail: 'https://picsum.photos/seed/dog-breeds/1200/500',    inline: 'https://picsum.photos/seed/golden-retriever/800/400' },
+  2:  { card: 'https://picsum.photos/seed/cat-food/600/400',      detail: 'https://picsum.photos/seed/cat-food/1200/500',      inline: 'https://picsum.photos/seed/cat-nutrition/800/400' },
+  3:  { card: 'https://picsum.photos/seed/rescue-dog/600/400',    detail: 'https://picsum.photos/seed/rescue-dog/1200/500',    inline: 'https://picsum.photos/seed/dog-shelter/800/400' },
+  4:  { card: 'https://picsum.photos/seed/wildlife-elephant/600/400', detail: 'https://picsum.photos/seed/wildlife-elephant/1200/500', inline: 'https://picsum.photos/seed/leopard-wild/800/400' },
+  5:  { card: 'https://picsum.photos/seed/home-pet-safe/600/400', detail: 'https://picsum.photos/seed/home-pet-safe/1200/500', inline: 'https://picsum.photos/seed/pet-home-2/800/400' },
+  6:  { card: 'https://picsum.photos/seed/dog-body-lang/600/400', detail: 'https://picsum.photos/seed/dog-body-lang/1200/500', inline: 'https://picsum.photos/seed/cat-body-lang/800/400' },
+  7:  { card: 'https://picsum.photos/seed/spay-neuter/600/400',   detail: 'https://picsum.photos/seed/spay-neuter/1200/500',   inline: 'https://picsum.photos/seed/vet-clinic/800/400' },
+  8:  { card: 'https://picsum.photos/seed/foster-pet/600/400',    detail: 'https://picsum.photos/seed/foster-pet/1200/500',    inline: 'https://picsum.photos/seed/foster-home/800/400' },
+  9:  { card: 'https://picsum.photos/seed/mental-health-pet/600/400', detail: 'https://picsum.photos/seed/mental-health-pet/1200/500', inline: 'https://picsum.photos/seed/pet-therapy/800/400' },
+  10: { card: 'https://picsum.photos/seed/parrot-bird/600/400',   detail: 'https://picsum.photos/seed/parrot-bird/1200/500',   inline: 'https://picsum.photos/seed/bird-cage/800/400' },
+  11: { card: 'https://picsum.photos/seed/animal-report/600/400', detail: 'https://picsum.photos/seed/animal-report/1200/500', inline: 'https://picsum.photos/seed/animal-welfare/800/400' },
+  12: { card: 'https://picsum.photos/seed/senior-dog/600/400',    detail: 'https://picsum.photos/seed/senior-dog/1200/500',    inline: 'https://picsum.photos/seed/old-pet-care/800/400' },
+  13: { card: 'https://picsum.photos/seed/no-kill-shelter/600/400', detail: 'https://picsum.photos/seed/no-kill-shelter/1200/500', inline: 'https://picsum.photos/seed/animal-shelter/800/400' },
+  14: { card: 'https://picsum.photos/seed/pet-insurance/600/400', detail: 'https://picsum.photos/seed/pet-insurance/1200/500', inline: 'https://picsum.photos/seed/vet-cost/800/400' },
+  15: { card: 'https://picsum.photos/seed/exotic-reptile/600/400', detail: 'https://picsum.photos/seed/exotic-reptile/1200/500', inline: 'https://picsum.photos/seed/exotic-pet/800/400' },
 };
 
 // ─── BLOG DATA ───
@@ -1234,11 +1235,10 @@ function renderBlogs(filter='all') {
   const blogs = getAllBlogs().filter(b => filter === 'all' || b.cat === filter);
   grid.innerHTML = blogs.map((b, i) => {
     const imgs = blogImages[b.id] || {};
-    const imgSrc = imgs.card || `https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80`;
+    const imgSrc = imgs.card || `https://picsum.photos/seed/pawguard${b.id||i}/600/400`;
     return `
     <div class="blog-card" onclick="openBlog(${JSON.stringify(b.id)})">
-      <div class="blog-thumb">
-        <img src="${imgSrc}" alt="${b.title}" loading="lazy" onerror="this.parentElement.style.background='linear-gradient(135deg,#1a3d2b,#4a7c59)';this.style.display='none'" />
+      <div class="blog-thumb" style="background-image:url('${imgSrc}');background-size:cover;background-position:center;">
         <div class="blog-thumb-overlay"></div>
         <span class="blog-cat-badge">${catLabel(b.cat)}</span>
         <span class="blog-date-badge">${b.date || '2026'}</span>
@@ -1262,7 +1262,7 @@ function renderBlogExtras(blog) {
   // Inline image
   const imgs = blogImages[blog.id] || {};
   if (imgs.inline) {
-    html += `<img src="${imgs.inline}" alt="${blog.title}" class="blog-inline-img" loading="lazy" onerror="this.style.display='none'" />`;
+    html += `<div style="width:100%;height:280px;border-radius:16px;margin:28px 0;background-image:url('${imgs.inline}');background-size:cover;background-position:center;"></div>`;
   }
 
   // Conclusion
@@ -1327,11 +1327,10 @@ function openBlog(id) {
   detail.classList.add('active');
 
   const imgs = blogImages[blog.id] || {};
-  const heroImg = imgs.detail || `https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=1200&q=80`;
+  const heroImg = imgs.detail || `https://picsum.photos/seed/pawguard-hero/1200/500`;
 
   detail.innerHTML = `
-    <div class="blog-detail-hero">
-      <img src="${heroImg}" alt="${blog.title}" loading="eager" onerror="this.style.display='none';this.parentElement.style.background='linear-gradient(135deg,#1a3d2b,#4a7c59)'" />
+    <div class="blog-detail-hero" style="background-image:url('${heroImg}');background-size:cover;background-position:center;">
       <div class="blog-detail-hero-overlay"></div>
       <div class="blog-detail-hero-text">
         <span class="blog-cat-badge">${catLabel(blog.cat)}</span>
@@ -1500,6 +1499,29 @@ window.addEventListener('DOMContentLoaded', () => {
   renderBlogs();
   document.getElementById('statTotalBlogs').textContent = blogsData.length + JSON.parse(localStorage.getItem('pawguard_blogs')||'[]').length;
 });
+
+// ─── EXPOSE ALL FUNCTIONS TO GLOBAL SCOPE ───
+window.showPage = showPage;
+window.openBlog = openBlog;
+window.closeBlog = closeBlog;
+window.filterBlogs = filterBlogs;
+window.toggleFaq = toggleFaq;
+window.openAdminModal = openAdminModal;
+window.closeAdminModal = closeAdminModal;
+window.adminLogin = adminLogin;
+window.adminLogout = adminLogout;
+window.activateEditMode = activateEditMode;
+window.switchAdminTab = switchAdminTab;
+window.insertTag = insertTag;
+window.insertHighlight = insertHighlight;
+window.insertInfographic = insertInfographic;
+window.previewBlog = previewBlog;
+window.publishBlog = publishBlog;
+window.renderSavedBlogsList = renderSavedBlogsList;
+window.viewBlogFromAdmin = viewBlogFromAdmin;
+window.deleteBlog = deleteBlog;
+window.submitForm = submitForm;
+window.showToast = showToast;
 </script>
 </body>
 </html>
